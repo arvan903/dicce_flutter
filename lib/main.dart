@@ -7,7 +7,7 @@ void main() {
     home: Scaffold(
       backgroundColor: Colors.red,
       appBar: AppBar(
-        title: const Center(child: Text('Dicee')),
+        title: const Center(child: Text('Dice')),
         backgroundColor: Colors.red,
       ),
       body: const DicePage(),
@@ -39,7 +39,7 @@ class _DicePageState extends State<DicePage> {
       child: Row(
         children: <Widget>[
           Expanded(
-            child: FlatButton(
+            child: TextButton(
               onPressed: () {
                 changediceface();
               },
@@ -47,7 +47,7 @@ class _DicePageState extends State<DicePage> {
             ),
           ),
           Expanded(
-            child: FlatButton(
+            child: TextButton(
                 onPressed: () {
                   changediceface();
                 },
